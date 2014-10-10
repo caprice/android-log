@@ -1,51 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <title>Android-log by SnowdreamFramework</title>
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Android-log by snowdream</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/snowdream/android-log">View on GitHub</a>
-    <div class="shell">
-
+    <div class="wrapper">
       <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Android-log</h1>
-            <h2>android lib - log</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
+        <h1 class="header">Android-log</h1>
+        <p class="header">android lib - log</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/SnowdreamFramework/android-log/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/SnowdreamFramework/android-log/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/SnowdreamFramework/android-log">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/SnowdreamFramework">SnowdreamFramework</a></p>
+
+
       </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/snowdream/android-log/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/snowdream/android-log/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+      <section>
         <h1>
 <a name="android-log" class="anchor" href="#android-log"><span class="octicon octicon-link"></span></a>android-log</h1>
 
@@ -121,20 +105,20 @@
 
 <p>5.log advance  </p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
 </pre></div>
 
 <p>6.log advance  -- set custom tag   </p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="n">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
+<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
 </pre></div>
 
 <p>7.Log to File</p>
@@ -181,21 +165,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 </code></pre>
       </section>
-
       <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/snowdream">snowdream</a> can be found on <a href="https://github.com/snowdream/android-log">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
-
     </div>
-
-    
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
