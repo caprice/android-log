@@ -31,124 +31,156 @@
       </header>
       <section>
         <h1>
-<a name="android-log" class="anchor" href="#android-log"><span class="octicon octicon-link"></span></a>android-log</h1>
+<a id="android-log" class="anchor" href="#android-log" aria-hidden="true"><span class="octicon octicon-link"></span></a>android-log</h1>
+
+<p><a href="https://travis-ci.org/SnowdreamFramework/android-log"><img src="https://travis-ci.org/SnowdreamFramework/android-log.svg?branch=master" alt="Build Status"></a>
+<a href="https://maven-badges.herokuapp.com/maven-central/com.github.snowdream.android.util/log"><img src="https://maven-badges.herokuapp.com/maven-central/com.github.snowdream.android.util/log/badge.svg" alt="Maven Central"></a>
+<a href="https://github.com/SnowdreamFramework/android-log/issues"><img src="https://img.shields.io/github/issues/badges/android-log.svg" alt="GITHUB"></a>
+<a href="http://www.apache.org/licenses/LICENSE-2.0.html"><img src="https://img.shields.io/hexpm/l/plug.svg" alt="LICENSE"></a></p>
+
+<p><a href="https://pledgie.com/campaigns/27475"><img src="https://pledgie.com/campaigns/27475.png" alt="Pledgie"></a></p>
 
 <h2>
-<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p>android lib - log</p>
 
 <h2>
-<a name="system-requirements" class="anchor" href="#system-requirements"><span class="octicon octicon-link"></span></a>System requirements</h2>
+<a id="system-requirements" class="anchor" href="#system-requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>System requirements</h2>
 
 <p>Android 2.2+</p>
 
 <h2>
-<a name="permission-requirements" class="anchor" href="#permission-requirements"><span class="octicon octicon-link"></span></a>Permission requirements</h2>
+<a id="permission-requirements" class="anchor" href="#permission-requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Permission requirements</h2>
 
-<div class="highlight highlight-xml"><pre><span class="nt">&lt;uses-permission</span> <span class="na">android:name=</span><span class="s">"android.permission.WRITE_EXTERNAL_STORAGE"</span> <span class="nt">/&gt;</span>
-</pre></div>
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">uses-permission</span> <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">name</span>=<span class="pl-s1"><span class="pl-pds">"</span>android.permission.WRITE_EXTERNAL_STORAGE<span class="pl-pds">"</span></span> /&gt;</pre></div>
 
 <h2>
-<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h2>
 
 <p>Apache commons-lang3   <a href="http://commons.apache.org/proper/commons-lang/">http://commons.apache.org/proper/commons-lang/</a></p>
 
 <h2>
-<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
+<a id="download" class="anchor" href="#download" aria-hidden="true"><span class="octicon octicon-link"></span></a>Download</h2>
 
-<p>Download <a href="https://oss.sonatype.org/content/groups/public/com/github/snowdream/android/util/log/1.0.4/log-1.0.4.jar">the latest jar</a> or grab via Maven:</p>
+<p>grab via Maven:</p>
 
-<div class="highlight highlight-xml"><pre><span class="nt">&lt;dependency&gt;</span>
-  <span class="nt">&lt;groupId&gt;</span>com.github.snowdream.android.util<span class="nt">&lt;/groupId&gt;</span>
-  <span class="nt">&lt;artifactId&gt;</span>log<span class="nt">&lt;/artifactId&gt;</span>
-  <span class="nt">&lt;version&gt;</span>1.0.4<span class="nt">&lt;/version&gt;</span>
-<span class="nt">&lt;/dependency&gt;</span>
-</pre></div>
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">dependency</span>&gt;
+  &lt;<span class="pl-ent">groupId</span>&gt;com.github.snowdream.android.util&lt;/<span class="pl-ent">groupId</span>&gt;
+  &lt;<span class="pl-ent">artifactId</span>&gt;log&lt;/<span class="pl-ent">artifactId</span>&gt;
+  &lt;<span class="pl-ent">version</span>&gt;1.1.0&lt;/<span class="pl-ent">version</span>&gt;
+&lt;/<span class="pl-ent">dependency</span>&gt;</pre></div>
 
 <p>or Gradle:</p>
 
-<div class="highlight highlight-groovy"><pre>    <span class="n">compile</span> <span class="s1">'com.github.snowdream.android.util:log:1.0.4'</span>
-</pre></div>
+<div class="highlight highlight-groovy"><pre>    compile <span class="pl-s1"><span class="pl-pds">'</span>com.github.snowdream.android.util:log:1.1.0<span class="pl-pds">'</span></span></pre></div>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="docs" class="anchor" href="#docs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Docs</h2>
+
+<p><a href="http://snowdreamframework.github.io/android-log/docs/1.1.0/javadoc/">http://snowdreamframework.github.io/android-log/docs/1.1.0/javadoc/</a></p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <p>1.enable/disable log  </p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">setEnabled</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">setEnabled</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setEnabled(<span class="pl-c1">true</span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>setEnabled(<span class="pl-c1">false</span>);  </pre></div>
 
-<p>2.set the Tag for the log  </p>
+<p>2.enable/disable log to console</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">setTag</span><span class="o">(</span><span class="s">"Android"</span><span class="o">);</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setLog2ConsoleEnabled(<span class="pl-c1">true</span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>setLog2ConsoleEnabled(<span class="pl-c1">false</span>);</pre></div>
 
-<p>3.log simple  </p>
+<p>3.enable/disable log to file</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test"</span><span class="o">);</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setLog2FileEnabled(<span class="pl-c1">true</span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>setLog2FileEnabled(<span class="pl-c1">false</span>);</pre></div>
 
-<p>4.log simple -- set custom tag  </p>
+<p>4.set the global Tag for the log</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">);</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">);</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setGlobalTag(<span class="pl-s1"><span class="pl-pds">"</span>Android<span class="pl-pds">"</span></span>);</pre></div>
 
-<p>5.log advance  </p>
+<p>5.log simple</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  </pre></div>
 
-<p>6.log advance  -- set custom tag   </p>
+<p>6.log simple -- set custom tag</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"TAG"</span><span class="o">,</span><span class="s">"test"</span><span class="o">,</span><span class="k">new</span> <span class="nf">Throwable</span><span class="o">(</span><span class="s">"test"</span><span class="o">));</span>  
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>);  </pre></div>
 
-<p>7.Log to File</p>
+<p>7.log advance</p>
 
-<p>log into one file      </p>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  </pre></div>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">setPath</span><span class="o">(</span><span class="s">"/mnt/sdcard/debug.txt"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">setPolicy</span><span class="o">(</span><span class="n">Log</span><span class="o">.</span><span class="na">LOG_ALL_TO_FILE</span><span class="o">);</span>
+<p>8.log advance  -- set custom tag</p>
 
-<span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test 1"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test 2"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test 3"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test 4"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test 5"</span><span class="o">);</span>
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>TAG<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>,<span class="pl-k">new</span> <span class="pl-stj">Throwable</span>(<span class="pl-s1"><span class="pl-pds">"</span>test<span class="pl-pds">"</span></span>));  </pre></div>
 
-<p>log into one directory with a lot of log files</p>
+<p>9.Log to File</p>
 
-<div class="highlight highlight-java"><pre><span class="n">Log</span><span class="o">.</span><span class="na">setPath</span><span class="o">(</span><span class="s">"/mnt/sdcard/snowdream/log"</span><span class="o">,</span><span class="s">"log"</span><span class="o">,</span><span class="s">"log"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">setPolicy</span><span class="o">(</span><span class="n">Log</span><span class="o">.</span><span class="na">LOG_ALL_TO_FILE</span><span class="o">);</span>
+<p>log into one file with FilePathGenerator</p>
 
-<span class="n">Log</span><span class="o">.</span><span class="na">d</span><span class="o">(</span><span class="s">"test 1"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">v</span><span class="o">(</span><span class="s">"test 2"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="s">"test 3"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="s">"test 4"</span><span class="o">);</span>
-<span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">"test 5"</span><span class="o">);</span>
-</pre></div>
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setFilePathGenerator(<span class="pl-k">new</span> <span class="pl-stj">FilePathGenerator</span>.<span class="pl-stj">DefaultFilePathGenerator</span>(<span class="pl-s1"><span class="pl-pds">"</span>/mnt/sdcard/<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>app<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>.log<span class="pl-pds">"</span></span>));
+<span class="pl-c">//Log.setFilePathGenerator(new FilePathGenerator.DefaultFilePathGenerator(context,"app",".log"));</span>
+<span class="pl-c">//Log.setFilePathGenerator(new FilePathGenerator.DateFilePathGenerator("/mnt/sdcard/","app",".log"));</span>
+<span class="pl-c">//Log.setFilePathGenerator(new FilePathGenerator.LimitSizeFilePathGenerator("/mnt/sdcard/","app",".log",10240));</span>
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>test 1<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>test 2<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>test 3<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>test 4<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>test 5<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>log into one file with LogFilter</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setFilePathGenerator(<span class="pl-k">new</span> <span class="pl-stj">FilePathGenerator</span>.<span class="pl-stj">DefaultFilePathGenerator</span>(<span class="pl-s1"><span class="pl-pds">"</span>/mnt/sdcard/<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>app<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>.log<span class="pl-pds">"</span></span>));
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>addLogFilter(<span class="pl-k">new</span> <span class="pl-stj">LogFilter</span>.<span class="pl-stj">LevelFilter</span>(<span class="pl-stj">Log</span><span class="pl-c1"><span class="pl-k">.</span>LEVEL<span class="pl-k">.</span>DEBUG</span>));
+<span class="pl-c">//Log.addLogFilter(new LogFilter.TagFilter(TAG));</span>
+<span class="pl-c">//Log.addLogFilter(new LogFilter.ContentFilter(CUSTOM_TAG));</span>
+
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>test 1<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>test 2<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>test 3<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>test 4<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>test 5<span class="pl-pds">"</span></span>);</pre></div>
+
+<p>log into one file with LogFormatter</p>
+
+<div class="highlight highlight-java"><pre><span class="pl-stj">Log</span><span class="pl-k">.</span>setFilePathGenerator(<span class="pl-k">new</span> <span class="pl-stj">FilePathGenerator</span>.<span class="pl-stj">DefaultFilePathGenerator</span>(<span class="pl-s1"><span class="pl-pds">"</span>/mnt/sdcard/<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>app<span class="pl-pds">"</span></span>,<span class="pl-s1"><span class="pl-pds">"</span>.log<span class="pl-pds">"</span></span>));
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>addLogFilter(<span class="pl-k">new</span> <span class="pl-stj">LogFilter</span>.<span class="pl-stj">LevelFilter</span>(<span class="pl-stj">Log</span><span class="pl-c1"><span class="pl-k">.</span>LEVEL<span class="pl-k">.</span>DEBUG</span>));
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>setLogFormatter(<span class="pl-k">new</span> <span class="pl-stj">LogFormatter</span>.<span class="pl-stj">EclipseFormatter</span>());
+<span class="pl-c">//Log.setLogFormatter(new LogFormatter.IDEAFormatter());</span>
+
+<span class="pl-stj">Log</span><span class="pl-k">.</span>d(<span class="pl-s1"><span class="pl-pds">"</span>test 1<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>v(<span class="pl-s1"><span class="pl-pds">"</span>test 2<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>i(<span class="pl-s1"><span class="pl-pds">"</span>test 3<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>w(<span class="pl-s1"><span class="pl-pds">"</span>test 4<span class="pl-pds">"</span></span>);
+<span class="pl-stj">Log</span><span class="pl-k">.</span>e(<span class="pl-s1"><span class="pl-pds">"</span>test 5<span class="pl-pds">"</span></span>);</pre></div>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <pre><code>Copyright (C) 2013 Snowdream Mobile &lt;yanghui1986527@gmail.com&gt;
 
